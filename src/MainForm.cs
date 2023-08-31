@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using SharpSvn;
+using System;
 using System.ComponentModel;
-using System.Linq;
-using System.Windows.Forms;
-using SharpSvn;
-using System.IO;
 using System.Configuration;
-using Microsoft.Win32;
+using System.IO;
 using System.Reflection;
+using System.Windows.Forms;
 
 namespace svnbackup
 {
@@ -72,16 +69,14 @@ namespace svnbackup
             textTargetBackupFolder.Text = IsDirectory(backupFolder) ? backupFolder : Environment.CurrentDirectory;
             textArchiveFileName.Text = config.AppSettings.Settings["TargetBaseFileName"].Value;
 
-            int numberValue = 0;
-            Int32.TryParse(config.AppSettings.Settings["NumberOfFilesToKeep"].Value, out numberValue);
+            int.TryParse(config.AppSettings.Settings["NumberOfFilesToKeep"].Value, out int numberValue);
             numericUpDownFilesToKeep.Value = numberValue;
 
-            bool value;
-            Boolean.TryParse(config.AppSettings.Settings["ExcludeIgnoreOnCommit"].Value, out value);
+            bool.TryParse(config.AppSettings.Settings["ExcludeIgnoreOnCommit"].Value, out bool value);
             chkExcludeIgnoreOnCommit.Checked = value;
-            Boolean.TryParse(config.AppSettings.Settings["ExcludeIgnoredFiles"].Value, out value);
+            bool.TryParse(config.AppSettings.Settings["ExcludeIgnoredFiles"].Value, out value);
             chkExcludeIgnoredFiles.Checked = value;
-            Boolean.TryParse(config.AppSettings.Settings["ExcludeUnversionedFiles"].Value, out value);
+            bool.TryParse(config.AppSettings.Settings["ExcludeUnversionedFiles"].Value, out value);
             chkExcludeUnversionedFiles.Checked = value;
         }
 

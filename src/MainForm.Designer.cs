@@ -298,6 +298,7 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
+            this.listViewModifications.HideSelection = false;
             this.listViewModifications.Location = new System.Drawing.Point(13, 246);
             this.listViewModifications.Name = "listViewModifications";
             this.listViewModifications.Size = new System.Drawing.Size(527, 235);

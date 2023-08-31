@@ -1,5 +1,4 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
@@ -8,9 +7,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("svnbackup")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("DevArtWare")]
 [assembly: AssemblyProduct("svnbackup")]
-[assembly: AssemblyCopyright("Copyright © 2016 - DevArtist")]
+[assembly: AssemblyCopyright("Copyright © 2023 Henk van der Vaart")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +31,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2016.038.0.0")]
-[assembly: AssemblyFileVersion("2016.038.0.0")]
+[assembly: AssemblyVersion("2023.035.0.0")]
+[assembly: AssemblyFileVersion("2023.035.0.0")]

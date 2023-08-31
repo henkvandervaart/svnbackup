@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Specialized;
 using System.Globalization;
-using System.Collections;
 
 namespace svnbackup
 {
